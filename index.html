@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="applicable-device" content="pc,mobile">
+    <title>我找木小先 - JesseZhu星杰的个人网站</title>
+    <meta name="keywords" content="JesseZhu,Jesse,朱星杰">
+    <meta name="description" content="JesseZhu的个人网站。">
+    <link rel="canonical" href="http://www.wzmxx.com/zh-cn">
+    <link rel="alternate" href="http://www.wzmxx.com/en-us" hreflang="en-us">
+    <link rel="alternate" href="http://www.wzmxx.com" hreflang="zh-cn">
+
+    <link rel="stylesheet" href="./resource/globalnav.css">
+    <link rel="stylesheet" href="./resource/globalfooter.css">
+    <link rel="stylesheet" href="./resource/base.css">
+    <link rel="stylesheet" href="./resource/index.css">
+</head>
+
+<body>
+    <input type="checkbox" id="menu-state-input">
+    <nav id="globalnav" role="navigation">
+        <ul class="nav-header">
+            <li class="nav-item nav-menuicon">
+                <label class="nav-menuicon-label" for="menu-state-input" aria-hidden="true">
+						<span class="nav-menuicon-bread nav-menuicon-bread-top">
+							<span class="nav-menuicon-bread-crust nav-menuicon-bread-crust-top"></span>
+						</span>
+						<span class="nav-menuicon-bread nav-menuicon-bread-bottom">
+							<span class="nav-menuicon-bread-crust nav-menuicon-bread-crust-bottom"></span>
+						</span>
+					</label>
+            </li>
+            <li class="nav-item nav-logo">
+                <a class="nav-link nav-link-logo" href="/">
+                    <span>Jesse</span>
+                </a>
+            </li>
+            <li class="nav-item nav-language">
+                <!-- <a class="nav-link nav-link-language" href="/en">
+                    <span>En</span>
+                </a> -->
+            </li>
+        </ul>
+        <ul class="nav-list">
+            <li class="nav-item nav-logo">
+                <a class="nav-link nav-link-logo" href="/">
+                    <span>Jesse</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-baseinfo" href="#baseinfo">
+                    <span>信息</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-education" href="#education">
+                    <span>教育</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-skill" href="#skill">
+                    <span>技能</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-experience" href="#experience">
+                    <span>经验</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-evaluation" href="#evaluation">
+                    <span>评价</span>
+                </a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link nav-link-works" href="#works">
+                    <span>作品</span>
+                </a>
+            </li> -->
+            <li class="nav-item nav-space">
+            </li>
+            <li class="nav-item nav-language nav-language-small">
+                <!-- <a class="nav-link nav-link-language" href="/en">
+                    <span>En</span>
+                </a> -->
+            </li>
+        </ul>
+    </nav>
+    <!-- <div id="nav-placeholder"></div> -->
+
+    <div class="main" role="main">
+        <section class="banner" id="banner">
+            <div class="banner-bg">
+                <video loop="loop" muted="muted" autoplay="autoplay" src="./resource/bg.mp4" id="banner-bg-video">抱歉，您的浏览器不支持内嵌视频</video>
+            </div>
+            <div class="banner-wrap">
+                <h1 class="page-title">Hello, I'm JesseZhu</h1>
+                <div class="page-search">
+                    <form action="" method="get" id="page-search-form" onsubmit="return false;">
+                        <label for="page-search-input" class="hidden"> 搜索信息</label>
+                        <input autocomplete="off" id="page-search-input" placeholder="搜索信息" name="q" spellcheck="false" type="text" oninput="onPageSearchInput()">
+                        <button id="page-search-submit" type="submit"></button>
+                        <button id="page-search-reset" type="reset" onclick="clearPageSearchInput()"></button>
+                    </form>
+                    <script>
+                        // 输入框事件
+                        var pageSearchInput = document.getElementById("page-search-input")
+                        var pageSearchSubmit = document.getElementById("page-search-submit")
+                        var pageSearchReset = document.getElementById("page-search-reset")
+
+                        function onPageSearchInput() {
+                            if (pageSearchInput.value) {
+                                pageSearchSubmit.style.opacity = 1;
+                                pageSearchReset.style.display = "block";
+                            } else {
+                                pageSearchSubmit.style.opacity = 0.4;
+                                pageSearchReset.style.display = "none";
+                            }
+                        }
+
+                        function clearPageSearchInput() {
+                            pageSearchInput.value = "";
+                            onPageSearchInput();
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+
+        <div class="section" id="baseinfo">
+            <div class="section-wrap">
+                <div class="section-item section-item-last">
+                    <h2 class="section-head">基本信息</h2>
+                    <p class="section-para">
+                        <span style="white-space: nowrap;">姓名: 朱星杰 JesseZhu</span>&nbsp;&nbsp;
+                        <span style="white-space: nowrap;">性别: 男</span>&nbsp;&nbsp;
+                        <span style="white-space: nowrap;">生日: 1997/11</span>&nbsp;&nbsp;
+                        <span style="white-space: nowrap;">籍贯: 江苏</span>&nbsp;&nbsp;
+                        <span style="white-space: nowrap;">现居: 上海</span>&nbsp;&nbsp;
+                        <span style="white-space: nowrap;">学历: 本科</span>&nbsp;&nbsp;
+                        <span style="white-space: nowrap;">英语水平: CET-6</span>&nbsp;&nbsp;
+                    </p>
+                    <p class="section-para">
+                        <embed class="section-svg" src="./resource/email.svg"> 邮箱:
+                        <a href="mailto:zxj@wzmxx.com">zxj@wzmxx.com</a>
+                    </p>
+                    <p class="section-para">
+                        <embed class="section-svg" src="./resource/qq.svg"> QQ:
+                        <a href="tencent://message/?uin=1290279000&Site=www.xxxxxxx.com.cn&Menu=yes" target="_blank">1290279000</a>
+                    </p>
+                    <p class="section-para">
+                        <embed class="section-svg" src="./resource/github.svg"> Github:
+                        <a href="https://github.com/ryconler" target="_blank">https://github.com/ryconler</a>
+                    </p>
+                </div>
+                <div class="section-item section-item-first">
+                    <img class="section-image" src="./resource/baseinfo-1.png" alt="" width="49%">
+                    <img class="section-image" src="./resource/baseinfo-2.png" alt="" width="49%">
+                </div>
+            </div>
+        </div>
+        <div class="section" id="education">
+            <div class="section-wrap">
+                <div class="section-item section-item-first">
+                    <h2 class="section-head">教育背景</h2>
+                    <p class="section-para">
+                        2015.09-2019.07 南通大学 计算机信息技术学院 网络工程专业</p>
+                    <p class="section-para">
+                        毕业设计:
+                        <a href="http://analytics.jessezhu.cn" target="_blank">用户行为分析平台</a><embed class="section-svg" src="./resource/jump.svg">
+                    </p>
+                    <p class="section-para">在校期间获取/通过:</p>
+                    <li class="section-para">
+                        两次校三等奖学金
+                        <a href="./resource/奖学金.jpg" target="_blank">查看证书</a><embed class="section-svg" src="./resource/picture.svg">
+                    </li>
+                    <li class="section-para">
+                        第八届中国大学生服务外包创业创新大赛二等奖
+                        <a href="./resource/服创奖状证书.jpg" target="_blank">查看证书</a><embed class="section-svg" src="./resource/picture.svg">
+                    </li>
+                    <li class="section-para">
+                        计算机技术与软件专业资格证书（中级）软件设计师
+                        <a href="./resource/软件设计师.jpg" target="_blank">查看证书</a><embed class="section-svg" src="./resource/picture.svg">
+                    </li>
+                </div>
+                <div class="section-item section-item-last">
+                    <img class="section-image" src="./resource/education.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="skill">
+            <div class="section-wrap section-center">
+                <h2 class="section-head">专业技能</h2>
+                <p class="section-para">编程语言: JavaScript、Java</p>
+                <p class="section-para">前端框架/库: Vue.js、jQuery</p>
+                <p class="section-para">后端框架: Spring Boot、Spring MVC</p>
+                <p class="section-para">其他技术: Photoshop</p>
+                <!-- <p class="section-para">
+                    <a href="#works">进一步了解我的作品</a>
+                    <embed class="section-svg" src="./resource/share.svg">
+                </p> -->
+            </div>
+        </div>
+
+        <div class="section" id="experience">
+            <div class="section-wrap">
+                <h2 class="section-head">工作与实习经验</h2>
+                <div>
+                    <div class="section-item">
+                        <img class="section-image" src="./resource/experience-1.png" alt="" width="200">
+                        <div class="section-paras">
+                            <h3 class="section-item-head">安客诚全球信息服务（南通）有限公司</h3>
+                            <p class="section-para"><b>2018.09-2018.11 技术服务部实习生</b></p>
+                            <p class="section-para">SQLServer</p>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img class="section-image" src="./resource/experience-2.png" alt="" width="200">
+                        <div class="section-paras">
+                            <h3 class="section-item-head">无锡永中软件股份有限公司</h3>
+                            <p class="section-para"><b>2019.07-2019.10 研发中心部</b></p>
+                            <p class="section-para">原生JavaScript、Canvas</p>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img class="section-image" src="./resource/experience-3.png" alt="" width="200">
+                        <div class="section-paras">
+                            <h3 class="section-item-head">上海成思信息科技有限公司</h3>
+                            <p class="section-para"><b>2019.11-至今 产品研发部</b></p>
+                            <p class="section-para">Vue、ElementUI、SpringBoot、SpringMVC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="evaluation">
+            <div class="section-wrap">
+                <div class="section-item section-item-first">
+                    <div style="height: 150px;"></div>
+                </div>
+                <div class="section-item section-item-last">
+                    <h2 class="section-head">自我评价</h2>
+                    <p class="section-para">
+                        思维活跃、知识面广、具有很强的接受和学习新知识的能力，做事认真负责， 善与人交流、有团队意识，为人积极乐观。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="section" id="works">
+            <div class="section-wrap section-center">
+                <h2 class="section-head">作品集</h2>
+                <p class="section-para"><a href="http://analytics.jessezhu.cn">用户行为分析平台</a></a>
+                </p>
+            </div>
+        </div> -->
+
+
+    </div>
+
+    <footer id="globalfooter" role="contentinfo">
+        <div class="footer-legal">
+            <div class="footer-legal-copyright">
+                Copyright © 2020 wzmxx 苏ICP备19002725号
+            </div>
+            <!-- <div class="footer-legal-links">
+                <a class="footer-legal-link" href="https://support.apple.com/zh-cn" target="_blank">页面风格参考: 官方Apple支持</a>
+                <a class="footer-legal-link" href="http://www.jessezhu.cn" target="_blank">旧版地址</a>
+            </div> -->
+        </div>
+    </footer>
+
+    <script src="./resource/jquery.js"></script>
+    <script src="./resource/index.js"></script>
+</body>
+
+</html>
