@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="applicable-device" content="pc,mobile">
+    <title>我找木小先 - JesseZhu星杰的个人主页</title>
+    <meta name="keywords" content="JesseZhu,Jesse,朱星杰">
+    <meta name="description" content="JesseZhu的个人网站。">
+    <link rel="canonical" href="http://www.wzmxx.com/zh-cn">
+    <link rel="alternate" href="http://www.wzmxx.com/en-us" hreflang="en-us">
+    <link rel="alternate" href="http://www.wzmxx.com" hreflang="zh-cn">
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/navigator.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index-jessezhu.css">
+    <link rel="stylesheet" href="./css/index-baseinfo.css">
+    <!-- <link rel="stylesheet" href="./css/footer.css"> -->
+</head>
+
+<body>
+    <nav class="mobile">
+        <input type="checkbox" id="nav-menu-state-input" style="display: none;">
+        <div class="nav-header">
+            <div class="nav-hamburger">
+                <label class="nav-hamburger-label" for="nav-menu-state-input">
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-title">
+                <a href="index.html">Jesse</a>
+            </div>
+            <div class="nav-language">
+                <a href="javascript:;">En</a>
+            </div>
+        </div>
+        <div class="nav-main">
+            <div class="nav-menus">
+                <div class="nav-menu">
+                    <a href="baseinfo.html">信息</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="education.html">教育</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="skill.html">技能</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="experience.html">经验</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="evaluation.html">评价</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="work.html">作品</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="pc">
+        <div class="nav-main">
+            <div class="nav-menus">
+                <div class="nav-menu">
+                    <a href="#">Jesse</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="baseinfo.html">信息</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="education.html">教育</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="skill.html">技能</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="experience.html">经验</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="evaluation.html">评价</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="work.html">作品</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="jessezhu">
+            <h1 class="animation-text-up">
+                <span style="--order: 1"><i text="朱">朱</i></span>
+                <span style="--order: 2"><i text="星">星</i></span>
+                <span style="--order: 3"><i text="杰">杰</i></span>
+            </h1>
+            <h2 class="animation-text-up">
+                <span style="--order: 4"><i text="J">J</i></span>
+                <span style="--order: 5"><i text="e">e</i></span>
+                <span style="--order: 6"><i text="s">s</i></span>
+                <span style="--order: 7"><i text="s">s</i></span>
+                <span style="--order: 8"><i text="e">e</i></span>&nbsp;
+                <span style="--order: 8"><i text="Z">Z</i></span>
+                <span style="--order: 9"><i text="h">h</i></span>
+                <span style="--order: 10"><i text="u">u</i></span>
+            </h2>
+            <div class="jessezhu-avatar animation-flip-over">
+                <div class="animation-skeleton"></div>
+                <img src="./img/avatar.png" alt="头像">
+            </div>
+        </section>
+    </main>
+
+    <div class="main" role="main" style="display: none;">
+        <section class="banner" id="banner">
+            <div class="banner-bg">
+                <!-- <video loop="loop" muted="muted" autoplay="autoplay" src="./resource/bg.mp4" id="banner-bg-video">抱歉，您的浏览器不支持内嵌视频</video> -->
+            </div>
+            <div class="banner-wrap">
+                <h1 class="page-title">Hello, I'm JesseZhu</h1>
+                <div class="page-search">
+                    <form action="" method="get" id="page-search-form" onsubmit="return false;">
+                        <label for="page-search-input" class="hidden"> 搜索信息</label>
+                        <input autocomplete="off" id="page-search-input" placeholder="搜索信息" name="q" spellcheck="false" type="text" oninput="onPageSearchInput()">
+                        <button id="page-search-submit" type="submit"></button>
+                        <button id="page-search-reset" type="reset" onclick="clearPageSearchInput()"></button>
+                    </form>
+                    <script>
+                        // 输入框事件
+                        var pageSearchInput = document.getElementById("page-search-input")
+                        var pageSearchSubmit = document.getElementById("page-search-submit")
+                        var pageSearchReset = document.getElementById("page-search-reset")
+
+                        function onPageSearchInput() {
+                            if (pageSearchInput.value) {
+                                pageSearchSubmit.style.opacity = 1;
+                                pageSearchReset.style.display = "block";
+                            } else {
+                                pageSearchSubmit.style.opacity = 0.4;
+                                pageSearchReset.style.display = "none";
+                            }
+                        }
+
+                        function clearPageSearchInput() {
+                            pageSearchInput.value = "";
+                            onPageSearchInput();
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+       
+
+        <div class="section" id="skill">
+            <div class="section-wrap section-center">
+                <h2 class="section-head">专业技能</h2>
+                <p class="section-para">编程语言: JavaScript、Java</p>
+                <p class="section-para">前端框架/库: Vue.js、jQuery</p>
+                <p class="section-para">后端框架: Spring Boot、Spring MVC</p>
+                <p class="section-para">其他技术: Photoshop</p>
+                <!-- <p class="section-para">
+                    <a href="#works">进一步了解我的作品</a>
+                    <embed class="section-svg" src="./resource/share.svg">
+                </p> -->
+            </div>
+        </div>
+
+        <div class="section" id="experience">
+            <div class="section-wrap">
+                <h2 class="section-head">工作与实习经验</h2>
+                <div>
+                    <div class="section-item">
+                        <img class="section-image" src="./resource/experience-1.png" alt="" width="200">
+                        <div class="section-paras">
+                            <h3 class="section-item-head">安客诚全球信息服务（南通）有限公司</h3>
+                            <p class="section-para"><b>2018.09-2018.11 技术服务部实习生</b></p>
+                            <p class="section-para">SQLServer</p>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img class="section-image" src="./resource/experience-2.png" alt="" width="200">
+                        <div class="section-paras">
+                            <h3 class="section-item-head">无锡永中软件股份有限公司</h3>
+                            <p class="section-para"><b>2019.07-2019.10 研发中心部</b></p>
+                            <p class="section-para">原生JavaScript、Canvas</p>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img class="section-image" src="./resource/experience-3.png" alt="" width="200">
+                        <div class="section-paras">
+                            <h3 class="section-item-head">上海成思信息科技有限公司</h3>
+                            <p class="section-para"><b>2019.11-至今 产品研发部</b></p>
+                            <p class="section-para">Vue、ElementUI、SpringBoot、SpringMVC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="evaluation">
+            <div class="section-wrap">
+                <div class="section-item section-item-first">
+                    <div style="height: 150px;"></div>
+                </div>
+                <div class="section-item section-item-last">
+                    <h2 class="section-head">自我评价</h2>
+                    <p class="section-para">
+                        思维活跃、知识面广、具有很强的接受和学习新知识的能力，做事认真负责， 善与人交流、有团队意识，为人积极乐观。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="works">
+            <div class="section-wrap section-center">
+                <h2 class="section-head">作品集</h2>
+                <p class="section-para"><a href="http://analytics.wzmxx.com" target="_blank">毕业设计 - Analytics用户行为分析平台</a></a>
+                </p>
+                <p class="section-para"><a href="http://batcave.wzmxx.com" target="_blank">个人Demo - Batcave资源共享网站</a></a>
+                </p>
+                <p class="section-para"><a href="http://app.wzmxx.com" target="_blank">小应用 - 小demo</a></a>
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer id="globalfooter" role="contentinfo" style="display: none;">
+        <div class="footer-legal">
+            <div class="footer-legal-copyright">
+                <a href="http://www.beian.miit.gov.cn" target="_blank" class="footer-legal-link">
+                    Copyright © 2020 wzmxx 苏ICP备19002725号
+                </a>
+            </div>
+            <!-- <div class="footer-legal-links">
+                <a class="footer-legal-link" href="https://support.apple.com/zh-cn" target="_blank">页面风格参考: 官方Apple支持</a>
+                <a class="footer-legal-link" href="http://www.wzmxx.com" target="_blank">旧版地址</a>
+            </div> -->
+        </div>
+    </footer>
+
+    <!-- <script src="./resource/jquery.js"></script> -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
