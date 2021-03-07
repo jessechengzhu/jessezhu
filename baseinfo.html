@@ -24,10 +24,10 @@
 <body>
     <nav>
         <div class="mobile">
-            <input type="checkbox" id="nav-menu-state-input" style="display: none;">
+            <input type="checkbox" id="nav-menu-control" style="display: none;">
             <div class="nav-header">
                 <div class="nav-hamburger">
-                    <label class="nav-hamburger-label" for="nav-menu-state-input">
+                    <label class="nav-hamburger-label" for="nav-menu-control">
                         <span></span>
                         <span></span>
                     </label>
@@ -54,6 +54,18 @@
                         <a href="work.html">作品</a>
                     </div> -->
                 </div>
+                <div class="nav-icons">
+                    <a class="nav-icon" href="javascript:;">
+                        <img src="./img/qq.png" alt="qq">
+                        <img src="./img/qq-qr.jpg" alt="qq-qr">
+                    </a>
+                    <a class="nav-icon" href="javascript:;">
+                        <img src="./img/wechat.png" alt="wechat">
+                        <img src="./img/wechat-qr.jpg" alt="wechat-qr">
+                    </a>
+                    <a class="nav-icon" href="https://github.com/Ryconler" target="_blank"><img src="./img/github.png" alt="github"></a>
+                    <a class="nav-icon" href="mailto:zxj@wzmxx.com"><img src="./img/email.png" alt="email"></a>
+                </div>
             </div>
         </div>
         <div class="pc">
@@ -75,6 +87,18 @@
                         <a href="work.html">作品</a>
                     </div> -->
                 </div>
+                <div class="nav-icons">
+                    <a class="nav-icon" href="javascript:;">
+                        <img src="./img/qq.png" alt="qq">
+                        <img src="./img/qq-qr.jpg" alt="qq-qr">
+                    </a>
+                    <a class="nav-icon" href="javascript:;">
+                        <img src="./img/wechat.png" alt="wechat">
+                        <img src="./img/wechat-qr.jpg" alt="wechat-qr">
+                    </a>
+                    <a class="nav-icon" href="https://github.com/Ryconler" target="_blank"><img src="./img/github.png" alt="github"></a>
+                    <a class="nav-icon" href="mailto:zxj@wzmxx.com"><img src="./img/email.png" alt="email"></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -85,7 +109,7 @@
             <div class="boxs">
                 <div class="box intro">
                     <p>
-                        <span class="animation-text-loading" style="--time: 1.4s;--delay: 0.4s"><label>我叫</label>朱星杰 JesseZhu</span>
+                        <span class="animation-text-loading" style="--time: 1.4s;--delay: 0.2s"><label>我叫</label>朱星杰 JesseZhu</span>
                     </p>
                     <p>
                         <span class="animation-text-loading" style="--time: 1s;--delay: 0.4s"><label>是个</label>男生</span>
@@ -99,58 +123,71 @@
                     <p>
                         <span class="animation-text-loading" style="--time: 1.4s;--delay: 0.8s"><label>毕业于</label>南通大学 - 网络工程专业</span>
                     </p>
-                    <div class="photo"></div>
+                    <div class="photo" style="--delay:0.6s;"></div>
                 </div>
                 <div class="box">
-                    <h3 class="animation-text-up"><span style="--order: 12"><i>奖状墙</i></span></h3>
+                    <h3><span class="animation-text-up">奖状墙</span></h3>
                     <div class="prizes">
-                        <div class="prize">
+                        <div class="prize" style="--delay:0.2s;">
                             <span class="prize-img"> 
                                 <div class="animation-skeleton"></div>
                                 <img src="./img/english.png" alt="英语六级">
                             </span>
                             <div class="prize-title">英语六级</div>
-                            <a href="javascript:;"></a>
-                            <div class="prize-detail">英语六级已通过</div>
+                            <label for="prize-detail-control-1"></label>
                         </div>
-                        <div class="prize">
+                        <div class="prize" style="--delay:0.4s;">
                             <span class="prize-img">
                                 <div class="animation-skeleton"></div>
                                 <img src="./img/jiangxuejin.png" alt="奖学金">
                             </span>
                             <div class="prize-title">奖学金</div>
-                            <a href="javascript:;"></a>
-                            <div class="prize-detail">在校期间两次获得校三等奖学金</div>
+                            <label for="prize-detail-control-2"></label>
                         </div>
-                        <div class="prize">
+                        <div class="prize" style="--delay:0.6s;">
                             <span class="prize-img">
                                 <div class="animation-skeleton"></div>
                                 <img src="./img/jiangzhuang.png" alt="大赛奖状">
                             </span>
                             <div class="prize-title">大赛奖状</div>
-                            <a href="javascript:;"></a>
-                            <div class="prize-detail">第八届中国大学生服务外包创业创新大赛二等奖</div>
+                            <label for="prize-detail-control-3"></label>
                         </div>
-                        <div class="prize">
+                        <div class="prize" style="--delay:0.8s;">
                             <span class="prize-img">
                                 <div class="animation-skeleton"></div>
                                 <img src="./img/zhengshu.png" alt="专业证书">
                             </span>
                             <div class="prize-title">专业证书</div>
-                            <a href="javascript:;"></a>
-                            <div class="prize-detail">计算机技术与软件专业资格证书（中级）软件设计师</div>
+                            <label for="prize-detail-control-4"></label>
                         </div>
+                    </div>
+                    <input type="radio" id="prize-detail-control-1" name="prize-detail-control" checked>
+                    <input type="radio" id="prize-detail-control-2" name="prize-detail-control">
+                    <input type="radio" id="prize-detail-control-3" name="prize-detail-control">
+                    <input type="radio" id="prize-detail-control-4" name="prize-detail-control">
+                    <div class="prizes-details" style="--delay: 1s">
+                        <div class="prize-detail">【英语六级】已通过<a href="./img/cet6.jpg" target="_blank">查看图片</a></div>
+                        <div class="prize-detail">【奖学金】在校获得两次获得校三等奖学金<a href="./img/jiangxuejin.jpg" target="_blank">查看图片</a></div>
+                        <div class="prize-detail">【大赛奖状】在校获得第八届中国大学生服务外包创业创新大赛二等奖<a href="./img/fuchuangjiangzhuang.jpg" target="_blank">查看图片</a></div>
+                        <div class="prize-detail">【专业证书】在校通过计算机技术与软件专业技术资格（水平）考试 - 软件设计师（中级）<a href="./img/ruanjianshejishi.jpg" target="_blank">查看图片</a></div>
                     </div>
                 </div>
             </div>
             <!-- <div class="divider" style="--delay: 1s"></div> -->
-            <h3 class="animation-text-up">
-                <span style="--order: 14"><i>擅长</i></span>
+            <h3>
+                <span class="animation-text-up">擅长</span>
             </h3>
             <div class="skills">
-                <p class="animation-text-up"><span style="--order: 16"><i style="--percent: 95%; --color: #ffa2a2;">◼︎◼︎◼︎◼ HTML & CSS & JavaScript ◼︎◼◼︎◼︎</i></span></p>
-                <p class="animation-text-up"><span style="--order: 18"><i style="--percent: 90%; --color: #9dffd2;">◼︎◼︎◼︎◼︎◼︎◼︎ Vue.js & Element UI ◼︎◼︎◼︎◼︎◼︎◼︎</i></span></p>
-                <p class="animation-text-up"><span style="--order: 20"><i style="--percent: 85%; --color: #98cdff;">◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼︎ Java & Spring ◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼︎</i></span></p>
+                <div class="pc">
+                    <p><span class="animation-text-up" style="--delay: 0.2s;--percent: 95%; --color: #ffa2a2;"><embed src="./img/html.svg"></embed> ◼︎◼︎◼︎◼◼︎◼︎◼︎◼︎◼◼︎◼︎◼ HTML & CSS & JavaScript ◼︎◼◼︎◼︎◼︎◼︎◼︎◼︎◼◼︎◼◼︎</span></p>
+                    <p><span class="animation-text-up" style="--delay: 0.4s;--percent: 90%; --color: #9dffd2;"><embed src="./img/vue_.svg"></embed> ◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼◼◼︎◼︎ Vue.js & Element UI ◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼◼︎◼◼︎◼︎</span></p>
+                    <p><span class="animation-text-up" style="--delay: 0.6s;--percent: 85%; --color: #fdd38d;"><embed src="./img/java.svg"></embed> ◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼◼︎◼︎◼◼︎◼︎ Java & Spring ◼︎◼︎◼︎◼︎◼︎◼︎◼︎◼◼︎◼︎◼︎◼︎◼◼︎◼︎◼︎◼︎</span></p>
+                </div>
+                <div class="mobile">
+                    <p><span class="animation-text-up" style="--delay: 0.2s;--percent: 95%; --color: #ffa2a2;"><embed src="./img/html.svg"></embed> ◼︎ HTML & CSS & JavaScript ◼︎</span></p>
+                    <p><span class="animation-text-up" style="--delay: 0.4s;--percent: 90%; --color: #9dffd2;"><embed src="./img/vue_.svg"></embed> ◼︎◼︎◼︎ Vue.js & Element UI ◼︎◼︎◼︎</span></p>
+                    <p><span class="animation-text-up" style="--delay: 0.6s;--percent: 85%; --color: #fdd38d;"><embed src="./img/java.svg"></embed> ◼◼︎◼︎◼︎◼︎◼︎ Java & Spring ◼︎◼︎◼︎◼︎◼︎◼︎</span></p>
+                </div>
             </div>
         </section>
     </main>

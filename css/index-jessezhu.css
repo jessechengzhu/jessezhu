@@ -18,12 +18,11 @@
 
 #jessezhu h1 {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: pre;
-  letter-spacing: 3px;
+  padding: 0 3vw;
+  box-sizing: border-box;
+  text-align: center;
   margin: 0;
+  perspective: 400px;
 }
 
 @media only screen and (min-width:640px) {
@@ -32,37 +31,42 @@
   }
 }
 
-#jessezhu i {
+#jessezhu h1 span {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  margin: 0 -0.4em;
+}
+
+#jessezhu h1 i {
   position: relative;
   font-style: normal;
   z-index: 0;
 }
 
-#jessezhu i::before,
-#jessezhu i::after {
+#jessezhu h1 i::before,
+#jessezhu h1 i::after {
   position: absolute;
   left: 0;
   top: 0;
   content: attr(text);
 }
 
-#jessezhu i::before {
+#jessezhu h1 i::before {
   z-index: -1;
   color: var(--light-shadow);
 }
 
-#jessezhu i::after {
+#jessezhu h1 i::after {
   z-index: -2;
   color: var(--deep-shadow);
 }
 
 #jessezhu h1:nth-of-type(1) i {
   /* 会与common中的animation-text-up动画冲突 */
-  /* animation: text-rotateh 5s ease-in-out infinite; */
+  animation: text-rotateh 5s ease-in-out infinite;
 }
 
-
-/* @keyframes text-rotateh {
+@keyframes text-rotateh {
   0%,
   100% {
     transform: rotate3d(0, 1, 0, 20deg);
@@ -70,7 +74,7 @@
   50% {
     transform: rotate3d(0, 1, 0, -20deg);
   }
-} */
+}
 
 #jessezhu h1:nth-of-type(1) i::before {
   animation: text-before-translateh 5.0s ease-in-out infinite;

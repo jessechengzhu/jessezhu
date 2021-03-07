@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+#baseinfo h3 {
+  font-weight: 300;
+}
+
 #baseinfo .box {
   position: relative;
   min-height: 220px;
@@ -24,6 +28,7 @@
 }
 
 #baseinfo .box.intro .photo {
+  --delay: 0s;
   position: absolute;
   right: -150px;
   top: 50%;
@@ -33,7 +38,7 @@
   /* background: #000000; */
   background: url(../img/photo.png);
   background-size: cover;
-  animation: photo-slide 0.5s ease-in-out forwards 2s;
+  animation: photo-slide 0.5s ease-in-out forwards var(--delay);
 }
 
 @keyframes photo-slide {
@@ -49,23 +54,14 @@
 }
 
 #baseinfo .prizes .prize {
+  --delay: 0s;
   position: relative;
   flex-grow: 1;
   text-align: center;
   font-size: 12px;
   padding-bottom: 5px;
   transform: rotateX(-90deg);
-  animation: flip-over 0.5s ease-in-out forwards 1.7s;
-}
-
-#baseinfo .prizes .prize:nth-of-type(2) {
-  animation-delay: 1.9s;
-}
-#baseinfo .prizes .prize:nth-of-type(3) {
-  animation-delay: 2.1s;
-}
-#baseinfo .prizes .prize:nth-of-type(4) {
-  animation-delay: 2.3s;
+  animation: flip-over 0.5s ease-in-out forwards var(--delay);
 }
 
 @keyframes flip-over {
@@ -89,7 +85,7 @@
   text-decoration: underline;
 }
 
-#baseinfo .prizes .prize a {
+#baseinfo .prizes .prize label {
   position: absolute;
   left: 0;
   top: 0;
@@ -98,49 +94,59 @@
   cursor: pointer;
 }
 
-#baseinfo .prizes .prize input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  width: 0;
-  height: 0;
+#baseinfo .prizes-details {
+  --delay: 0s;
+  position: relative;
+  border: 1px solid var(--theme-font-color);
+  height: 40px;
+  box-sizing: content-box;
+  margin-top: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: expand 0.5s ease-in-out forwards var(--delay);
 }
 
-#baseinfo .prizes .prize .prize-detail {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  border: 1px solid var(--theme-font-color);
-  background: #666666;
+@keyframes expand {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+#baseinfo .prizes-details .prize-detail {
+  position: relative;
   box-sizing: border-box;
-  opacity: 0;
-  transform-origin: 50% top;
-  transform: scaleY(0);
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  padding: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   transition: all 0.3s ease-in-out;
 }
 
-#baseinfo .prizes .prize:first-child .prize-detail {
-  left: 0;
+#baseinfo input[name='prize-detail-control'] {
+  display: none;
 }
 
-#baseinfo .prizes .prize:last-child .prize-detail {
-  left: auto;
-  right: 0;
+#baseinfo input[name='prize-detail-control']:nth-of-type(2):checked~.prizes-details .prize-detail:first-child {
+  margin-top: calc(-40px * 1);
 }
 
-#baseinfo .prizes .prize a:hover+.prize-detail,
-#baseinfo .prizes .prize .prize-detail:hover {
-  opacity: 1;
-  transform: scaleY(1);
+#baseinfo input[name='prize-detail-control']:nth-of-type(3):checked~.prizes-details .prize-detail:first-child {
+  margin-top: calc(-40px * 2);
+}
+
+#baseinfo input[name='prize-detail-control']:nth-of-type(4):checked~.prizes-details .prize-detail:first-child {
+  margin-top: calc(-40px * 3);
 }
 
 #baseinfo .skills {
   margin-bottom: 50px;
 }
 
-#baseinfo .skills i {
+#baseinfo .skills span {
   --color: #4cd265;
   --percent: 100%;
   background-image: linear-gradient(90deg, var(--color) var(--percent), var(--theme-font-color) calc(100% - var(--percent)));

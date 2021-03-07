@@ -6,7 +6,7 @@
 }
 
 html {
-  font-family: monospace, sans-serif;
+  font-family: monospace, Courier New, sans-serif;
 }
 
 body {
@@ -40,27 +40,43 @@ body::before {
 }
 
 h1 {
+  --line-height: 1.5;
   font-size: 40px;
-  line-height: 1.5;
+  line-height: var(--line-height);
   margin: 30px 0;
 }
 
 h2 {
+  --line-height: 1.4;
   font-size: 30px;
-  line-height: 1.4;
+  line-height: var(--line-height);
   margin: 25px 0;
 }
 
 h3 {
+  --line-height: 1.3;
   font-size: 24px;
-  line-height: 1.3;
+  line-height: var(--line-height);
   margin: 24px 0;
 }
 
 p {
+  --line-height: 1.2;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: var(--line-height);
   margin: 18px 0;
+}
+
+a,
+a:active {
+  color: var(--theme-font-color);
+}
+
+embed {
+  display: inline-block;
+  width: calc(var(--line-height) * 1em);
+  width: calc(var(--line-height) * 1em);
+  vertical-align: bottom;
 }
 
 .mobile {
@@ -83,38 +99,25 @@ p {
 
 /* 
  * 文字逐个上升动画效果
- * 使用方式：<div class="animation-text-up"><span style="--order: 1"><i>content</i></span></div> 
+ * 使用方式：<div><span class="animation-text-up" style="--delay: 1s">content</span></div> 
  */
 
 .animation-text-up {
-  --order: 0;
-  overflow: hidden;
-}
-
-.animation-text-up>* {
-  position: relative;
-  float: left;
-  top: 1.5em;
+  --delay: 0s;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  overflow-y: hidden;
+  height: calc(var(--line-height) * 1em);
+  padding-top: calc(var(--line-height) * 1em);
   /* background: gray; */
-  animation: text-up 0.3s ease-in-out forwards;
-}
-
-.animation-text-up>*>* {
-  position: relative;
-  font-style: normal;
-  top: 1.5em;
-  animation: text-up 0.6s ease-in-out forwards;
+  animation: text-up 0.6s ease-in-out forwards var(--delay);
 }
 
 @keyframes text-up {
   to {
-    top: 0;
+    padding-top: 0;
   }
-}
-
-.animation-text-upa>*,
-.animation-text-up>*>* {
-  animation-delay: calc(var(--order) * 0.1s + 0.3s);
 }
 
 

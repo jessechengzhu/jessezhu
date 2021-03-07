@@ -24,10 +24,10 @@
 
 <body>
     <nav class="mobile">
-        <input type="checkbox" id="nav-menu-state-input" style="display: none;">
+        <input type="checkbox" id="nav-menu-control" style="display: none;">
         <div class="nav-header">
             <div class="nav-hamburger">
-                <label class="nav-hamburger-label" for="nav-menu-state-input">
+                <label class="nav-hamburger-label" for="nav-menu-control">
                     <span></span>
                     <span></span>
                 </label>
