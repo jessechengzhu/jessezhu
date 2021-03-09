@@ -157,12 +157,13 @@
   overflow: hidden;
   border: 2px solid var(--deep-shadow);
   box-shadow: 4px 2px var(--deep-shadow);
-  animation: flip-over 1.5s ease-in-out forwards;
+  transform: rotateY(-450deg);
+  animation: flip-over 1s ease-out forwards 0.5s;
 }
 
 @keyframes flip-over {
   to {
-    transform: rotateY(360deg);
+    transform: rotateY(0deg);
   }
 }
 

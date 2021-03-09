@@ -160,14 +160,12 @@ nav .mobile .nav-icons .nav-icon img:nth-of-type(2) {
   left: calc((100% - 50vw) / 2);
   top: calc(var(--header-height) - 5vw);
   width: 50vw;
-  height: 50vw;
-  transform: scaleY(0);
-  transform-origin: top;
+  height: 0;
   transition: all 0.3s ease-in-out;
 }
 
 nav .mobile .nav-icons .nav-icon:hover img:nth-of-type(2) {
-  transform: scaleY(1);
+  height: 50vw;
 }
 
 
