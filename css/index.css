@@ -12,31 +12,6 @@ main section {
   overflow: hidden;
 }
 
-main .boxs {
-  overflow: hidden;
-}
-
-main .box {
-  border: 1px solid var(--theme-font-color);
-  border-radius: 5px;
-  padding: 0 3%;
-  float: left;
-  width: 100%;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-}
-
-@media only screen and (min-width:640px) {
-  main .box {
-    width: 47%;
-    margin-right: 3%;
-  }
-  main .box:last-child {
-    width: 50%;
-    margin-right: 0;
-  }
-}
-
 
 /* 分割线 */
 

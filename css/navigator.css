@@ -260,12 +260,11 @@ nav .pc .nav-icons .nav-icon img:nth-of-type(2) {
   left: calc((100% - 100px) / 2);
   top: calc(var(--header-height-pc) - 10px);
   width: 100px;
-  height: 100px;
-  transform: scaleY(0);
+  height: 0;
   transform-origin: top;
   transition: all 0.3s ease-in-out;
 }
 
 nav .pc .nav-icons .nav-icon:hover img:nth-of-type(2) {
-  transform: scaleY(1);
+  height: 100px;
 }
