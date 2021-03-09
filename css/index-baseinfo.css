@@ -130,15 +130,15 @@
   display: none;
 }
 
-#baseinfo input[name='prize-detail-control']:nth-of-type(2):checked~.prize-detail:first-child {
+#baseinfo input[name='prize-detail-control']:nth-of-type(2):checked~.prizes-details .prize-detail:first-child {
   margin-top: calc(-40px * 1);
 }
 
-#baseinfo input[name='prize-detail-control']:nth-of-type(3):checked~.prize-detail:first-child {
+#baseinfo input[name='prize-detail-control']:nth-of-type(3):checked~.prizes-details .prize-detail:first-child {
   margin-top: calc(-40px * 2);
 }
 
-#baseinfo input[name='prize-detail-control']:nth-of-type(4):checked~.prize-detail:first-child {
+#baseinfo input[name='prize-detail-control']:nth-of-type(4):checked~.prizes-details .prize-detail:first-child {
   margin-top: calc(-40px * 3);
 }
 
