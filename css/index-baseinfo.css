@@ -53,7 +53,7 @@
   align-items: center;
 }
 
-#baseinfo .prizes .prize {
+#baseinfo .prize {
   --delay: 0s;
   position: relative;
   flex-grow: 1;
@@ -70,22 +70,22 @@
   }
 }
 
-#baseinfo .prizes .prize .prize-img {
+#baseinfo .prize-img {
   display: inline-block;
   position: relative;
 }
 
-#baseinfo .prizes .prize .prize-img img {
+#baseinfo .prize-img img {
   width: 50px;
   height: 50px;
 }
 
-#baseinfo .prizes .prize .prize-title {
+#baseinfo .prize-title {
   display: block;
   text-decoration: underline;
 }
 
-#baseinfo .prizes .prize label {
+#baseinfo .prize label {
   position: absolute;
   left: 0;
   top: 0;
@@ -114,7 +114,7 @@
   }
 }
 
-#baseinfo .prizes-details .prize-detail {
+#baseinfo .prize-detail {
   position: relative;
   box-sizing: border-box;
   width: 100%;
@@ -130,15 +130,15 @@
   display: none;
 }
 
-#baseinfo input[name='prize-detail-control']:nth-of-type(2):checked~.prizes-details .prize-detail:first-child {
+#baseinfo input[name='prize-detail-control']:nth-of-type(2):checked~.prize-detail:first-child {
   margin-top: calc(-40px * 1);
 }
 
-#baseinfo input[name='prize-detail-control']:nth-of-type(3):checked~.prizes-details .prize-detail:first-child {
+#baseinfo input[name='prize-detail-control']:nth-of-type(3):checked~.prize-detail:first-child {
   margin-top: calc(-40px * 2);
 }
 
-#baseinfo input[name='prize-detail-control']:nth-of-type(4):checked~.prizes-details .prize-detail:first-child {
+#baseinfo input[name='prize-detail-control']:nth-of-type(4):checked~.prize-detail:first-child {
   margin-top: calc(-40px * 3);
 }
 

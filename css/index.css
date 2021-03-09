@@ -16,7 +16,7 @@ main .boxs {
   overflow: hidden;
 }
 
-main .boxs .box {
+main .box {
   border: 1px solid var(--theme-font-color);
   border-radius: 5px;
   padding: 0 3%;
@@ -27,11 +27,11 @@ main .boxs .box {
 }
 
 @media only screen and (min-width:640px) {
-  main .boxs .box {
+  main .box {
     width: 47%;
     margin-right: 3%;
   }
-  main .boxs .box:last-child {
+  main .box:last-child {
     width: 50%;
     margin-right: 0;
   }
