@@ -66,6 +66,12 @@
 
 #works iframe {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - var(--header-height) * 2);
   margin-bottom: 60px;
+}
+
+@media only screen and (min-width:640px) {
+  #works iframe {
+    height: calc(100vh - var(--header-height-pc) * 2);
+  }
 }
