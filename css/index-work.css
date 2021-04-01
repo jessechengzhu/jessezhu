@@ -49,7 +49,7 @@
 #works .work-intro {
   margin: 10px 0;
   font-size: 14px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 #works .work label {
