@@ -85,13 +85,18 @@
     justify-content: space-between;
   }
   #experience .education,
-  #experience .work {
+  #experience .work,
+  #experience .project {
     flex-grow: 1;
   }
   #experience .education {
     padding-right: 50px;
   }
   #experience .work {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #experience .project {
     padding-left: 50px;
   }
   #experience .timeline {

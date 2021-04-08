@@ -46,7 +46,7 @@
   box-sizing: border-box;
   display: inline-block;
   margin-right: 10px;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 #baseinfo .box.intro .photo {
@@ -131,6 +131,9 @@
 }
 
 @keyframes expand {
+  from {
+    transform: scaleX(0);
+  }
   to {
     transform: scaleX(1);
   }
@@ -168,6 +171,11 @@
   margin-bottom: 50px;
 }
 
+#baseinfo .skills p {
+  display: block;
+  overflow: hidden;
+}
+
 #baseinfo .skills span {
   --color: #4cd265;
   --percent: 100%;
@@ -175,5 +183,19 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  text-align: justify;
+  text-align-last: justify;
+  display: inline-block;
   white-space: pre;
+}
+
+#baseinfo .skills .pc span {
+  width: 540px;
+}
+
+#baseinfo .skills .mobile span {
+  width: calc(100% - 30px);
+}
+#baseinfo .resumes {
+  margin-bottom: 50px;
 }

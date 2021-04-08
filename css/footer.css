@@ -7,7 +7,7 @@ footer {
   text-align: center;
   font-size: 12px;
   z-index: -9999;
-  animation: fontcolor-gradient 10s ease infinite;
+  /* animation: fontcolor-gradient 10s ease infinite; */
 }
 
 footer .tip,
