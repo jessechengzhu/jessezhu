@@ -1,5 +1,4 @@
-footer,
-footer a {
+footer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -9,6 +8,10 @@ footer a {
   font-size: 12px;
   /* z-index: -9999; */
   /* animation: fontcolor-gradient 10s ease infinite; */
+}
+
+footer a {
+  color: #999999;
 }
 
 footer .tip,
