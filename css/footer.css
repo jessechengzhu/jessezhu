@@ -1,4 +1,5 @@
-footer {
+footer,
+footer a {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -6,7 +7,7 @@ footer {
   color: #999999;
   text-align: center;
   font-size: 12px;
-/*   z-index: -9999; */
+  /* z-index: -9999; */
   /* animation: fontcolor-gradient 10s ease infinite; */
 }
 
