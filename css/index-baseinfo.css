@@ -13,7 +13,7 @@
 
 #baseinfo .box {
   position: relative;
-  min-height: 240px;
+  height: 220px;
   border: 1px solid var(--theme-font-color);
   border-radius: 5px;
   padding: 0 2%;
@@ -185,6 +185,7 @@
 
 #baseinfo .skills p {
   display: flex;
+  align-items: flex-start;
 }
 
 #baseinfo .skills p > embed,
@@ -193,6 +194,8 @@
 }
 #baseinfo .skills p > span {
   flex: 1;
+  display: flex;
+  justify-content: space-between;
   overflow: hidden;
   --color: #4cd265;
   --percent: 100%;
@@ -205,8 +208,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  text-align: justify;
-  text-align-last: justify;
   white-space: pre;
 }
 
@@ -214,9 +215,6 @@
   width: 640px;
 }
 
-#baseinfo .skills .mobile p > span {
-  flex: 1;
-}
 #baseinfo .resumes {
   margin-bottom: 50px;
 }
