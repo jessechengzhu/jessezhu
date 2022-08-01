@@ -1,0 +1,78 @@
+#works {
+  padding: 0 5vw;
+  box-sizing: border-box;
+}
+
+#works h2 {
+  font-weight: 300;
+}
+
+#works .works {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+#works .work {
+  width: 50%;
+  max-width: 320px;
+  padding: 0 10px;
+  font-weight: 300;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+}
+
+#works .work a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+#works .work-logo {
+  height: 50px;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+#works .work-logo img {
+  width: auto;
+  height: 100%;
+}
+
+#works .work-title {
+  margin: 0;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+#works .work-intro {
+  margin: 10px 0;
+  font-size: 14px;
+  /* text-decoration: underline; */
+}
+
+#works .work label {
+  font-size: 12px;
+  padding: 3px 10px;
+  background: var(--theme-bg-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  vertical-align: bottom;
+}
+
+#works iframe {
+  width: 100%;
+  height: calc(100vh - var(--header-height) * 2);
+  margin-bottom: 60px;
+}
+
+@media only screen and (min-width:640px) {
+  #works iframe {
+    height: calc(100vh - var(--header-height-pc) * 2);
+  }
+}
