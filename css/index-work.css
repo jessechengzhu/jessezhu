@@ -4,6 +4,11 @@
 }
 
 #works .work-wrap {
+  margin-bottom: 50px;
+}
+
+#works .work-wrap .work-desc {
+  display: block;
 }
 
 #works .work-wrap .work-desc h2 {
@@ -16,20 +21,25 @@
 }
 
 #works .work-wrap .work-previews .work-preview {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  padding: 0 32px;
 }
 
 @media only screen and (min-width: 640px) {
   #works .work-wrap {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
+
+  #works .work-wrap .work-desc {
+    flex: 1;
+    margin-right: 30px;
+  }
+
   #works .work-wrap .work-previews {
+    width: 50vw;
+    height: 25vw;
+  }
+  
+  #works .work-wrap .work-previews .work-preview {
     width: 50vw;
     height: 25vw;
   }
@@ -38,26 +48,22 @@
 ul.slides {
   position: relative;
   overflow: hidden;
+  display: flex;
 }
 
 li.slide {
+  flex: none;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  box-sizing: border-box;
   transition: 0.5s transform ease-in-out;
 }
 
-.slide:nth-of-type(1) {
-}
-
-.slide:nth-of-type(2) {
-  left: 100%;
-}
-
-.slide:nth-of-type(3) {
-  left: 200%;
+li.slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 input[type="radio"] {
@@ -76,6 +82,10 @@ input[type="radio"] {
   transform: translatex(-200%);
 }
 
+.slides input[type="radio"]:nth-of-type(4):checked ~ .slide {
+  transform: translatex(-300%);
+}
+
 /* 左右 Button */
 .navigator {
   position: absolute;
@@ -92,17 +102,28 @@ input[type="radio"] {
 .navigator .left-button {
   cursor: pointer;
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 7vw;
+  height: 7vw;
   background: url(../img/works/icon-arrow_round.png) 0 0/100% 100% no-repeat;
 }
 .navigator .right-button {
   cursor: pointer;
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 7vw;
+  height: 7vw;
   background: url(../img/works/icon-arrow_round.png) 0 0/100% 100% no-repeat;
   transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 640px) {
+  .navigator .left-button {
+    width: 32px;
+    height: 32px;
+  }
+  .navigator .right-button {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .slides input[type="radio"]:nth-of-type(1):checked ~ .navigator:nth-of-type(1) {
@@ -117,11 +138,16 @@ input[type="radio"] {
   display: flex;
 }
 
+.slides input[type="radio"]:nth-of-type(4):checked ~ .navigator:nth-of-type(4) {
+  display: flex;
+}
+
 /* 底部指示灯 */
 .indicators {
   position: absolute;
   width: 100%;
   bottom: 12px;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,32 +155,46 @@ input[type="radio"] {
 
 .indicators .indicator {
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 2vw;
+  height: 2vw;
   border-radius: 50%;
   margin: 0 3px;
-  border: 2px solid #ffffff;
+  border: 2px solid #a1a1a1;
   background-color: transparent;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 640px) {
+  .indicators .indicator {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .slides
   input[type="radio"]:nth-of-type(1):checked
   ~ .indicators
   .indicator:nth-of-type(1) {
-  background-color: #ffffff;
+  background-color: #ffd65a;
 }
 
 .slides
   input[type="radio"]:nth-of-type(2):checked
   ~ .indicators
   .indicator:nth-of-type(2) {
-  background-color: #ffffff;
+  background-color: #ffd65a;
 }
 
 .slides
   input[type="radio"]:nth-of-type(3):checked
   ~ .indicators
   .indicator:nth-of-type(3) {
-  background-color: #ffffff;
+  background-color: #ffd65a;
+}
+
+.slides
+  input[type="radio"]:nth-of-type(4):checked
+  ~ .indicators
+  .indicator:nth-of-type(4) {
+  background-color: #ffd65a;
 }
