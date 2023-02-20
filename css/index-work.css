@@ -15,6 +15,13 @@
   font-weight: 300;
 }
 
+#works .work-wrap .work-qrcode {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+}
+
 #works .work-wrap .work-previews {
   width: 90vw;
   height: 45vw;
