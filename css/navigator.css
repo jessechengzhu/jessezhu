@@ -268,3 +268,16 @@ nav .pc .nav-icons .nav-icon img:nth-of-type(2) {
 nav .pc .nav-icons .nav-icon:hover img:nth-of-type(2) {
   height: 100px;
 }
+
+nav .pc .nav-icons .nav-icon span {
+  display: none;
+  position: absolute;
+  left: calc((100% - 120px) / 2);
+  top: calc(var(--header-height-pc) - 10px);
+  transform-origin: top;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .pc .nav-icons .nav-icon:hover span {
+  display: block;
+}
