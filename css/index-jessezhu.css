@@ -175,3 +175,7 @@
 #jessezhu h2 {
   text-align: center;
 }
+
+#jessezhu h2 a {
+  text-decoration: none;
+}
